@@ -1,0 +1,9 @@
+.custom-header {
+  font-family: 'Titillium Web' !important;
+}
+
+@media only screen and (max-width: 420px) {
+  .custom-header {
+    font-size: 1.5em !important;
+  }
+}
