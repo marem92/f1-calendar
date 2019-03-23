@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchTrack } from '../actions';
+import { fetchTracks } from '../actions';
 import './TrackDetail.css';
 
 class TrackDetail extends React.Component {
   componentDidMount() {
-    this.props.fetchTrack(this.props.match.params.id);
+    this.props.fetchTracks(this.props.match.params.id);
+    window.scrollTo(0, 0);
   }
   render() {
     if (!this.props.track) {
@@ -94,5 +95,5 @@ const mapStateToProps = (state, ownProps) => {
 };
 export default connect(
   mapStateToProps,
-  { fetchTrack }
+  { fetchTracks }
 )(TrackDetail);
