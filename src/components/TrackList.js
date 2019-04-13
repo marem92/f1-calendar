@@ -13,7 +13,7 @@ class TrackList extends React.Component {
   renderList() {
     return this.props.tracks.map(track => {
       return (
-        <div className="item big-font" key={track.id}>
+        <Link className="item link" to={`/tracks/${track.id}`} key={track.id} >
           <div className="right floated content">{track.date}</div>
           <img
             className="ui avatar image"
@@ -21,19 +21,17 @@ class TrackList extends React.Component {
             alt="track"
             style={{ width: '3em' }}
           />
-          <div className="content">
-            <Link className="black-text" to={`/tracks/${track.id}`}>
-              {track.id}
-            </Link>
+          <div className="content title">
+              {track.title}
           </div>
-        </div>
+        </Link>
       );
     });
   }
 
   render() {
     return (
-      <div className="ui middle aligned divided list">{this.renderList()}</div>
+      <div className="ui middle aligned selection divided list">{this.renderList()}</div>
     );
   }
 }

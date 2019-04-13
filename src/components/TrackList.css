@@ -9,3 +9,14 @@ div {
 .black-text {
   color: #000 !important;
 }
+
+.link {
+  font-size: 1.5em !important;
+  color: #000 !important;
+}
+
+.title {
+  margin-left: 15px !important;
+  text-transform: uppercase;
+  font-weight: 500;
+}
