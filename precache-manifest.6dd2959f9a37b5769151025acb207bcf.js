@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/f1-calendar/static/css/main.0b574877.chunk.css"
   },
   {
-    "revision": "6d7c3e3ae32cf67b234173b2e84e494b",
+    "revision": "e1588ad3c3c89164f8a6bc754e7f5fe4",
     "url": "/f1-calendar/index.html"
   }
 ];
